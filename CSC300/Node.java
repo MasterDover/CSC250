@@ -1,23 +1,30 @@
 public class Node 
 {
-	private int payload;
 	private Node nextNode;
+	private Person payload;
 	
-	public Node(int payload)
+	
+
+	public Node(Person payload)
 	{
 		this.payload = payload;
 		this.nextNode = null;
 	}
 	
-	public Node getNextNode() {
-		return nextNode;
+	public Node getNextNode() 
+	{
+		return this.nextNode;
 	}
-	public void setNextNode(Node nextNode) {
+
+	public void setNextNode(Node nextNode) 
+	{
 		this.nextNode = nextNode;
 	}
-	public int getPayload() {
-		return payload;
+
+	public Person getPayload() {
+		return this.payload;
 	}
+	
 	
 	
 }
