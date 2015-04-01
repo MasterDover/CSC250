@@ -1,4 +1,5 @@
-using System;
+import java.awt.Image;
+import java.util.Random;
 
 public class Scenario
 {
@@ -23,7 +24,7 @@ public class Scenario
         this.leftScenario = null;
         this.rightScenario = null;
         Random rnd = new Random();
-        this.lr = rnd.Next(2);
+        this.lr = rnd.nextInt(2);
 	}
 
     public void add(Image i, Answer a1, Answer a2, Answer a3, Answer a4)
