@@ -1,16 +1,14 @@
-using System;
-
 public class Answer
 {
     private String answerString;
-    private String nextAnswer;
-    private String nextAnswerIf;
+    private Answer nextAnswer;
+    private Answer nextAnswerIf;
 
 	public Answer()
 	{
-        String answerString = null;
-        String nextAnswer = null;
-        String nextAnswerIf = null;
+       answerString = null;
+       nextAnswer = null;
+       nextAnswerIf = null;
 	}
 
     public void addAnswer(String s, Answer a)
